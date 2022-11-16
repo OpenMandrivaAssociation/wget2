@@ -14,15 +14,7 @@ Group:		Networking/WWW
 License:	GPLv3
 URL:		http://www.gnu.org/directory/GNU/wget.html
 Source0:	https://ftp.gnu.org/pub/gnu/wget/%{name}-%{version}.tar.lz
-# The following patch is needed for authenticated sites where login can have '@':
-#Patch7:		wget-1.10-url_password.patch
-#Patch8:		wget-1.20.1-default-content_disposition-on.patch
-# needed by urpmi, inspired by http://matthewm.boedicker.org/code/src/wget_force_clobber.patch
-#Patch13:	wget-1.16.1-add-force-clobber-option.patch
-#Patch14:	wget-1.15-etc.patch
-#Patch15:	wget-1.21.2-fix-clang.patch
-Provides:	webclient
-Provides:	webfetch
+
 BuildRequires:	autoconf-archive
 BuildRequires:	lzip
 BuildRequires:	gettext
@@ -73,6 +65,7 @@ automake -a
 autoconf
 
 %build
+# not compile with clang 15
 export CC=gcc
 export CXX=g++
 %configure \
@@ -90,8 +83,6 @@ export CXX=g++
 
 %install
 %make_install
-
-# install -m755 util/rmold.pl %{buildroot}%{_bindir}/rmold
 
 %find_lang %{name} --all-name
 
