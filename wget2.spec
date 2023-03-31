@@ -9,7 +9,7 @@
 Summary:	A utility for retrieving files using the HTTP or FTP protocols
 Name:		wget2
 Version:	2.0.1
-Release:	1
+Release:	2
 Group:		Networking/WWW
 License:	GPLv3
 URL:		http://www.gnu.org/directory/GNU/wget.html
