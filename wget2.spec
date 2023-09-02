@@ -1,6 +1,6 @@
-%define major 1
+%define major 2
 
-%define libname %mklibname %{name} %{major}
+%define libname %mklibname %{name}
 %define devname %mklibname -d %{name}
 
 %bcond_with crosscompile
