@@ -1,6 +1,6 @@
-%define major 1
+%define major 2
 
-%define libname %mklibname %{name} %{major}
+%define libname %mklibname %{name}
 %define devname %mklibname -d %{name}
 
 %bcond_with crosscompile
@@ -8,8 +8,8 @@
 
 Summary:	A utility for retrieving files using the HTTP or FTP protocols
 Name:		wget2
-Version:	2.0.1
-Release:	2
+Version:	2.1.0
+Release:	1
 Group:		Networking/WWW
 License:	GPLv3
 URL:		http://www.gnu.org/directory/GNU/wget.html
