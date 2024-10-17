@@ -12,7 +12,7 @@ Version:	2.1.0
 Release:	1
 Group:		Networking/WWW
 License:	GPLv3
-URL:		http://www.gnu.org/directory/GNU/wget.html
+URL:		https://www.gnu.org/directory/GNU/wget.html
 Source0:	https://ftp.gnu.org/pub/gnu/wget/%{name}-%{version}.tar.lz
 
 BuildRequires:	autoconf-archive
