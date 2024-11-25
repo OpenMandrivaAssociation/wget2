@@ -8,7 +8,7 @@
 
 Summary:	A utility for retrieving files using the HTTP or FTP protocols
 Name:		wget2
-Version:	2.1.0
+Version:	2.2.0
 Release:	1
 Group:		Networking/WWW
 License:	GPLv3
@@ -66,8 +66,8 @@ autoconf
 
 %build
 # not compile with clang 15
-export CC=gcc
-export CXX=g++
+#export CC=gcc
+#export CXX=g++
 %configure \
 	--enable-ipv6 \
 	--disable-rpath \
