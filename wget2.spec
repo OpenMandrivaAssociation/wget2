@@ -1,4 +1,4 @@
-%define major 2
+%define major 3
 
 %define libname %mklibname %{name}
 %define devname %mklibname -d %{name}
@@ -8,7 +8,7 @@
 
 Summary:	A utility for retrieving files using the HTTP or FTP protocols
 Name:		wget2
-Version:	2.1.0
+Version:	2.2.0
 Release:	1
 Group:		Networking/WWW
 License:	GPLv3
@@ -65,9 +65,6 @@ automake -a
 autoconf
 
 %build
-# not compile with clang 15
-export CC=gcc
-export CXX=g++
 %configure \
 	--enable-ipv6 \
 	--disable-rpath \
