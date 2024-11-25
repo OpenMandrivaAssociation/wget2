@@ -1,4 +1,4 @@
-%define major 2
+%define major 3
 
 %define libname %mklibname %{name}
 %define devname %mklibname -d %{name}
@@ -65,9 +65,6 @@ automake -a
 autoconf
 
 %build
-# not compile with clang 15
-#export CC=gcc
-#export CXX=g++
 %configure \
 	--enable-ipv6 \
 	--disable-rpath \
