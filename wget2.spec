@@ -15,6 +15,10 @@ License:	GPLv3
 URL:		https://www.gnu.org/directory/GNU/wget.html
 Source0:	https://ftp.gnu.org/pub/gnu/wget/%{name}-%{version}.tar.lz
 
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	autoconf-archive
 BuildRequires:	lzip
 BuildRequires:	gettext
