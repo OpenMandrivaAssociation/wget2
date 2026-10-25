@@ -1,4 +1,4 @@
-%define major 4
+%define major 5
 
 %define libname %mklibname %{name}
 %define devname %mklibname -d %{name}
@@ -8,8 +8,8 @@
 
 Summary:	A utility for retrieving files using the HTTP or FTP protocols
 Name:		wget2
-Version:	2.2.1
-Release:	2
+Version:	2.3.0
+Release:	1
 Group:		Networking/WWW
 License:	GPLv3
 URL:		https://www.gnu.org/directory/GNU/wget.html
